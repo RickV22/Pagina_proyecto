@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Postulación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="width: 100%; text-align: center;">Formulario de Postulación</h2>
+        <form action="procesar_formulario.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_documento">Tipo de documento:</label>
+                <select id="tipo_documento" name="tipo_documento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="tarjeta_identidad">Tarjeta de identidad</option>
+                    <option value="cedula">Cédula</option>
+                    <option value="cedula_extranjera">Cédula extranjera</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo institucional:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="programa">Programa académico:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Seleccione...</option>
+                    <option value="instalacion_mantenimiento">TP en Instalación y Mantenimiento de Redes de Telecomunicaciones</option>
+                    <option value="mantenimiento_sistemas">TP en Mantenimiento de Sistemas Informáticos</option>
+                    <option value="mantenimiento_sistemas">TP en Mantenimiento Electromecánico</option>
+                    <option value="mantenimiento_sistemas">TP en Mantenimiento Electrónico Industrial</option>
+                    <option value="mantenimiento_sistemas">TP en Operación de Procesos Industriales</option>
+                    <option value="mantenimiento_sistemas">TNL en Gestión de Seguridad y Salud en el Trabajo</option>
+                    <option value="mantenimiento_sistemas">TNL en Gestión de Sistemas Eléctricos </option>
+                    <option value="mantenimiento_sistemas">TP en Producción Gráfica Multimedial</option>
+                    <option value="mantenimiento_sistemas">Licenciatura en Educación Básica Primaria</option>
+                    <option value="mantenimiento_sistemas">TP en Operaciones del Comercio Exterior</option>
+                    <option value="mantenimiento_sistemas">TNL en Gestión Administrativa</option>
+                    <!-- Agrega más opciones aquí -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sede">Sede:</label>
+                <select type="text" id="sede" name="sede" required>
+                    <option value="">Seleccione...</option>
+                    <option value="instalacion_mantenimiento">Soledad</option>
+                    <option value="mantenimiento_sistemas">Plaza de la paz</option>
+                </select>    
+
+            </div>
+            <div class="form-group">
+                <label for="cuatrimestre">Cuatrimestre:</label>
+                <input type="text" id="cuatrimestre" name="cuatrimestre" required>
+            </div>
+            <div class="form-group">
+                <label for="promedio">Promedio:</label>
+                <input type="text" id="promedio" name="promedio" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de monitoria:</label>
+                <div class="options">
+                    <label><input type="radio" name="tipo_monitoria" value="academica" required> Académica</label>
+                    <label><input type="radio" name="tipo_monitoria" value="administrativa" required> Administrativa</label>
+                </div>
+            </div>
+            <div class="form-group" id="modulo-area">
+                <label for="modulo_area">Módulo o Área:</label>
+                <select id="modulo_area" name="modulo_area" required>
+                    <option value="">Seleccione...</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-button">Enviar Postulación</button>
+        </form>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
