@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="agg.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Perfil del Monitor</h1>
+        <button class="logout-button" onclick="location.href='../login/login.html'">Cerrar Sesión</button>
+    </div>
+    <div class="content">
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Tipo de Documento:</strong> Cédula</p>
+            <p><strong>Correo Institucional:</strong> juan.perez@unibarranquilla.edu</p>
+            <p><strong>Programa Académico:</strong> Ingeniería de Sistemas</p>
+            <p><strong>Sede:</strong> Barranquilla</p>
+            <p><strong>Cuatrimestre:</strong> 3</p>
+            <p><strong>Promedio:</strong> 4.5</p>
+            <p><strong>Área:</strong> Sistemas</p>
+            <p>Horas Realizadas: <span id="horas-realizadas">0</span></p>
+        </div>
+        <h2 class="title">Agregar Horas Realizadas</h2>
+            <div class="hours-form">
+                <input type="number" placeholder="Horas Cumplidas" id="horasCumplidas">
+                <button onclick="agregarHoras()">Agregar Horas</button>
+            </div>
+        <h2>Horario</h2>
+        <div class="hours-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>08:00 - 10:00</th>
+                        <th>10:00 - 12:00</th>
+                        <th>12:00 - 14:00</th>
+                        <th>14:00 - 16:00</th>
+                        <th>16:00 - 18:00</th>
+                    </tr>
+                </thead>
+                <tbody id="horario">
+                    <tr>
+                        <td>Lunes</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <button onclick="location.href='supervisor.html'">Ver Supervisor</button>
+        </div>
+    </div>
+</body>
+</html>

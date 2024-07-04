@@ -1,0 +1,117 @@
+/*style academic*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #002366;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.header .logo {
+    color: #ffffff; /* Texto blanco */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header .login-button {
+    background-color: #FFD700; /* Amarillo no tan claro */
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+.sidebar {
+    width: 12%; /* Ancho de la barra lateral */
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Línea divisoria */
+}
+.sidebar button {
+    display: block;
+    width: 106%;
+    padding: 10px; /* Botones más pequeños */
+    margin-bottom: 15px; /* Más separación entre botones */
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #002366; /* Borde azul oscuro */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px; /* Texto un poco más pequeño */
+    transition: background-color 0.3s, color 0.3s;
+} 
+.sidebar button:hover {
+    background-color: #002366; /* Azul oscuro al pasar el ratón */
+    color: #fff;
+}
+.content {
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Envolver elementos */
+    justify-content: flex-start; /* Alinear al inicio */
+}
+.module {
+    width: 45%; /* Ancho del módulo */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para hover */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+}
+.module:hover {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba en hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada en hover */
+}
+.module img {
+    width: 80px; /* Ancho de la imagen */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    border-radius: 50%; /* Borde redondeado para la imagen */
+}
+.module-content {
+    flex: 1; /* Ocupar el espacio restante */
+}
+.module h3 {
+    margin-top: 0;
+    color: #002366; /* Azul oscuro */
+    font-size: 20px; /* Tamaño de fuente más grande */
+}
+.module p {
+    font-size: 16px; /* Tamaño de fuente más grande para el texto */
+    color: #333; /* Color del texto */
+}
+.module .requirements {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Color de texto gris */
+}
+.apply-button {
+    margin-top: auto; /* Empujar hacia abajo todo lo posible */
+    align-self: right; /* Centrado horizontal */
+    background-color: #FFD700; /* Amarillo no tan claro */
+    color: #000;
+    padding: 3% 9px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.apply-button:hover {
+    background-color: #FFD700; /* Amarillo no tan claro (mismo color al pasar el ratón) */
+    color: #000;
+}

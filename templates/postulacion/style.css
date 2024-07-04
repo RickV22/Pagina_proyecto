@@ -1,0 +1,65 @@
+/*style postulacion*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.form-container {
+    background-color: #fff;
+    padding: 40px 80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center; /* Alineación centrada para todo el contenido */
+    margin-bottom: 20px; /* Margen inferior para separar del siguiente contenido */
+}
+.form-container h2 {
+    color: #002366; /* Color azul oscuro */
+    margin-top: 0; /* Asegura que no haya margen superior */
+    margin-bottom: 20px; /* Espacio inferior para separar del formulario */
+}
+.form-group {
+    text-align: left; /* Alineación izquierda para etiquetas y campos */
+    margin-bottom: 16px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Color del texto */
+}
+.form-group select,
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group .options {
+    margin-top: 5px;
+}
+.form-group .options label {
+    margin-right: 350px;
+}
+.submit-button {
+    background-color: #002366; /* Azul oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.submit-button:hover {
+    background-color: #004080; /* Azul un poco más claro */
+}
